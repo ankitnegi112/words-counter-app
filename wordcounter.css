@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(64, 177, 115);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WordCounter{
+    box-shadow: 3px 3px 10px black;
+    position: relative;
+    margin-top:1rem;
+    border-radius: 9px;
+}
+.WordCounter h1{
+    text-align: left;
+    background-color: rgb(26, 23, 23);
+    color:#fff;
+    margin:0;
+    padding:1rem;
+    border-radius:9px 9px 0px 0px;
+}
+.Text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+textarea{
+    min-height:45vh;
+    min-width:80vw;
+    max-width:90vw;
+    max-height: 90vh;
+    padding:0.5rem;
+    outline:none;
+    font-size:1rem;
+    background-color: transparent;
+    border:none;
+    color:#fff;
+}
+textarea:focus{
+    background:#000;
+}
+.Result{
+    margin: 0px;
+    padding:0.5rem;
+    background-color: rgb(26, 23, 23);
+    color:#fff;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:0.2rem;
+    border-radius:0px 0px 9px 9px;
+}
+
+.Result p{
+    font-size:1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:0.3px 0.3px #000000;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.chars{
+    background-color: rgb(68, 146, 68);
+    color:#000000;
+    padding:0.5rem;
+    border-radius:12px;
+    border:1px solid green;
+}
+.words{
+    background-color: rgb(68, 146, 68);
+    color:#000000;
+    padding:0.5rem;
+    border-radius:12px;
+    border:1px solid green;
+}
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(94, 197, 53);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding:3px;
+    }
+    textarea{
+        min-height:45vh;
+        min-width:100%;
+        max-height: 50vh;
+        padding:0.5rem;
+        outline:none;
+        font-size:18px;
+        background-color: transparent;
+        border:none;
+        font-size:1rem;
+    }
+}
+
